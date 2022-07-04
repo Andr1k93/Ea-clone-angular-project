@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "eaDisplayBold";
+  src: url(./ElectronicArtsDisplay-Bold.woff2);
+}
+@font-face {
+  font-family: "eaDisplayRegular";
+  src: url(./ElectronicArtsDisplay-Regular.woff2);
+}
+
+@font-face {
+  font-family: "eaTextLight";
+  src: url(./ElectronicArtsText-Light.woff2);
+}
+
+@font-face {
+  font-family: "eaTextRegular";
+  src: url(./ElectronicArtsText-Regular.woff2);
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url(./Oswald.ttf);
+}
+
+@font-face {
+  font-family: "seravek-web";
+  src: url(https://use.typekit.net/af/064c42/00000000000000003b9ace31/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3)
+    format("woff2");
+}
+@font-face {
+  font-family: "ElectronicArtsText";
+  src: url(./ElectronicArtsText-bold.woff2) format("woff");
+}
+
+h1 {
+  font-family: eaDisplayBold;
+  font-size: 3.4em;
+}
+h2 {
+  font-family: eaDisplayBold;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: eaDisplayBold;
+  font-size: 2.75em;
+}
+
+h6 {
+  font-family: ElectronicArtsText;
+  font-size: 1.15em;
+}

@@ -1,0 +1,177 @@
+<div class="container-background-color">
+  <div class="d-flex container-footer-3">
+    <div class="container-image">
+      <img src="../../../../assets/october-ea-ring.png" alt="" />
+    </div>
+    <div class="container-list">
+      <ul class="d-flex gap-5 mt-3">
+        <li>
+          <a href=""><b>Libreria dei giochi</b></a>
+        </li>
+        <li>
+          <a href=""><b>Registrati</b></a>
+        </li>
+        <li>
+          <a href=""><b>Origin</b></a>
+        </li>
+        <li>
+          <a href=""><b>Informazioni</b></a>
+        </li>
+        <li>
+          <a href=""><b>Accessibilità</b></a>
+        </li>
+        <li>
+          <a href=""><b>Aiuto</b></a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <button
+        class="buttons-lingua position-relative"
+        #buttonsLanguage
+        (click)="
+          rotateArrow(arrow);
+          cancelBorder(buttonsLanguage);
+          showPanel(selectLanguage)
+        "
+      >
+        <div *ngIf="visibility == false; else panelLanguage"></div>
+        <select
+          #selectLanguage
+          class="option-language"
+          name="language"
+          size="19"
+        >
+          <option value="0">United States</option>
+          <option value="1">United Kingdom</option>
+          <option value="2">Australia</option>
+          <option value="3">France</option>
+          <option value="4">Deutschland</option>
+          <option value="5">Cina</option>
+          <option value="6">Polska</option>
+          <option value="7">Brasil</option>
+          <option value="8">Espana</option>
+          <option value="9">Russia</option>
+          <option value="10">Ceska Republika</option>
+          <option value="11">Canada(En)</option>
+          <option value="12">Canada(Fr)</option>
+          <option value="13">Danmark</option>
+          <option value="14">Suomi</option>
+          <option value="15">Mexico</option>
+          <option value="16">Nederland</option>
+          <option value="17">Norge</option>
+          <option value="18">Sverige</option>
+          <option value="19">Turkye</option>
+        </select>
+        <span class="button-default">
+          <span>
+            <img
+              style="margin-bottom: 3px"
+              src="../../../../assets/icon-language/italy.png"
+              alt=""
+            />
+            Italia
+          </span>
+          <span>
+            <img
+              #arrow
+              style="width: 18px"
+              src="../../../assets/icons8-freccia-espandi-30.png"
+          /></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="container-footer-4">
+    <ul class="list-legal-nots gap-2">
+      <li><a href="#">Note legali</a></li>
+      <li><a href="#">Accordo con l'utente</a></li>
+      <li>
+        <a href="#"
+          >Politica sulla privacy e sui cookie (i tuoi diritti sulla privacy)</a
+        >
+      </li>
+      <li><a href="#">Aggiornamenti sui servizi online</a></li>
+      <li><a href="#">Termini di servizio di Youtube</a></li>
+      <li><a href="#">Norme sulla privacy di Google</a></li>
+      <li><a href="#">Cookie Preferenze</a></li>
+    </ul>
+    <p class="ms-4">© 2021 Electronic Arts Inc.</p>
+  </div>
+</div>
+<ng-template #panelLanguage>
+  <div class="panel-language">
+    <a href="#">
+      <img src="../../../../assets/icon-language/usa.png" alt="" />
+      United States
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/uk.png" alt="" />
+      United Kingdom
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/australia.png" alt="" />
+      Australia
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/france.png" alt="" />
+      France
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/germania.png" alt="" />
+      Deutschland
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/italy.png" alt="" />
+      Italia
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/giappo.png" alt="" />
+      日本
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/polska.png" alt="" />
+      Polska
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/brazil.png" alt="" />
+      Brasil
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/espana.png" alt="" />
+      Espana
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/canada.png" alt="" />
+      Canada(En)
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/canada.png" alt="" />
+      Canada(Fr)
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/danmark.png" alt="" />
+      Danmark
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/suomi.png" alt="" />
+      Suomi
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/mexico.png" alt="" />
+      Mexico
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/norge.png" alt="" />
+      Norge
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/sverige.png" alt="" />
+      Sverige
+    </a>
+    <a href="#">
+      <img src="../../../../assets/icon-language/turkye.png" alt="" />
+      Turkye
+    </a>
+  </div>
+</ng-template>

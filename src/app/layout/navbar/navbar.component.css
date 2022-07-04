@@ -1,0 +1,195 @@
+nav {
+  height: 56px;
+  padding-left: 15px;
+}
+.menu-navbar div {
+  font-family: eaDisplayRegular;
+  font-size: 1.15rem;
+}
+
+.button-sidebar img {
+  width: 24px;
+  height: 23px;
+  transition: 0.3s ease-in-out;
+}
+.button-sidebar img:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  transform: scale(1.4);
+}
+.navbar-brand img {
+  max-height: 34px;
+}
+.menu-navbar {
+  height: 56px;
+}
+.experience-dropdown-btn {
+  position: relative;
+  height: 70px;
+  z-index: -11;
+}
+.experience-dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out;
+  height: 0px;
+  margin-top: 0px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.experience-dropdown:hover .experience-dropdown-content {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.829);
+  transform: translateY(20px);
+  height: 200px;
+  opacity: 1;
+}
+
+.games-dropdown-btn {
+  position: relative;
+  height: 70px;
+  z-index: -11;
+}
+.games-dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out;
+  height: 0px;
+  margin-top: 0px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.games-dropdown:hover .games-dropdown-content {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.829);
+  transform: translateY(20px);
+  height: 325px;
+  opacity: 1;
+}
+
+.games-row {
+  display: flex;
+  gap: 15px;
+}
+.games-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.games-row p {
+  font-family: ElectronicArtsText;
+}
+
+.info-dropdown-btn {
+  position: relative;
+  height: 70px;
+  z-index: -11;
+}
+.info-dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out;
+  height: 0px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.info-dropdown:hover .info-dropdown-content {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.829);
+  transform: translateY(20px);
+  height: 265px;
+  opacity: 1;
+}
+
+.resources-dropdown-btn {
+  position: relative;
+  height: 70px;
+  z-index: -11;
+}
+.resources-dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out;
+  height: 0px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.resources-dropdown:hover .resources-dropdown-content {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.829);
+  transform: translateY(20px);
+  height: 340px;
+  opacity: 1;
+}
+
+.commit-dropdown-btn {
+  position: relative;
+  height: 70px;
+  z-index: -11;
+}
+.commit-dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out;
+  height: 0px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.commit-dropdown:hover .commit-dropdown-content {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.829);
+  transform: translateY(20px);
+  height: 235px;
+  opacity: 1;
+}
+
+.dropbtn {
+  margin-left: 35px;
+}
+.dropdown-custom {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 35px;
+  gap: 15px;
+}
+.dropdown-custom a {
+  text-decoration: none;
+  font-family: eaTextLight;
+  color: var(--ea-black);
+}
+.dropbtn:hover,
+.dropdown-custom a:hover {
+  color: var(--ea-orange);
+}
+
+.dropbtn::after {
+  background-image: url("../../../assets/icons8-freccia-espandi-30.png");
+  background-size: 15px 15px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  content: "";
+  margin-left: 10px;
+}
+
+.dropbtn:hover::after {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1056px) {
+  .menu-navbar {
+    display: none !important;
+  }
+  .sidebar-btn {
+    content: url("../../../assets/sidebar1032.png");
+  }
+  .button-sidebar:hover img {
+    transform: none;
+    filter: none;
+  }
+}

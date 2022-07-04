@@ -1,0 +1,12 @@
+<img [src]="new.image" alt="Copertina card" />
+<article class="news-info">
+  <h3>
+    {{ new.category }}
+    <span>{{ new.date | date }}</span>
+  </h3>
+  <h1>{{ new.title }}</h1>
+
+  <p>
+    {{ new.description }}
+  </p>
+</article>

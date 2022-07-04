@@ -1,0 +1,54 @@
+.banner-footer {
+  height: 540px;
+  background-image: url("../../../../../assets/banner-footer-1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: eaTextRegular;
+}
+
+.ea-logo-play {
+  top: 25%;
+  left: 20vw;
+}
+
+.ea-logo-play > p {
+  font-size: 16px;
+  max-width: 450px;
+  color: white;
+}
+@media (max-width: 1456px) {
+  .ea-logo-play {
+    left: 15vw;
+  }
+  .banner-footer {
+    background-image: url("../../../../../assets/banner-footer-1455.jpg");
+    height: 580px;
+  }
+}
+@media (max-width: 1024px) {
+  .ea-logo-play {
+    left: 10vw;
+  }
+  .banner-footer {
+    background-image: url("../../../../../assets/banner-footer-1023.jpg");
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .ea-logo-play {
+    left: 5vw;
+  }
+  .banner-footer {
+    background-image: url("../../../../../assets/banner-footer-767.jpg");
+    height: 100vh;
+    display: flex;
+  }
+}
+@media (max-width: 568px) {
+  .ea-logo-play {
+    left: 5vw;
+  }
+  .banner-footer {
+    background-image: url("../../../../../assets/banner-footer-320.jpg");
+  }
+}

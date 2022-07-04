@@ -1,0 +1,118 @@
+<div
+  class="d-flex justify-content-end align-items-center gap-3 black-nav"
+  #blackNavbar
+>
+  <button
+    width="40px"
+    class="btn login-panel"
+    (click)="loginButtonClick(); changeVisibility(topContent, blackNavbar)"
+    #button
+  >
+    <img
+      [class.clicked]="loginClicked"
+      width="16px"
+      src="../../../assets/top-navbar-login.svg"
+      alt=""
+    />
+  </button>
+  <button
+    width="40px"
+    class="btn help-panel"
+    (click)="helperButtonClick(); changeVisibility(topContent, blackNavbar)"
+  >
+    <img
+      [class.clicked]="helperClicked"
+      height="18px"
+      src="../../../assets/top-navbar-help.svg"
+      alt=""
+    />
+  </button>
+  <div height="40px" class="ea-logo me-4">
+    <a class="btn EA-logo" href="#">
+      <img width="36px" src="../../../assets/top-navbar-ealogo.svg" alt="" />
+    </a>
+  </div>
+</div>
+<div class="top-navbar-content" #topContent>
+  <div
+    class="content-login-panel d-flex flex-column flex-sm-row justify-content-between gap-5"
+    [class.content-clicked]="loginClicked"
+  >
+    <a href="#" class="d-flex flex-row flex-md-column align-items-center gap-2">
+      <img
+        width="36px"
+        src="../../../assets/top-navbar-content-signin.svg"
+        alt=""
+      />
+      <span>Accedi</span>
+    </a>
+
+    <a href="#" class="d-flex flex-row flex-md-column align-items-center gap-2">
+      <img
+        width="36px"
+        src="../../../assets/top-navbar-content-register.svg"
+        alt=""
+      />
+      <span>Crea Account</span>
+    </a>
+  </div>
+  <div
+    class="content-help-panel d-flex flex-column align-items-center gap-2"
+    [class.content-clicked]="helperClicked"
+  >
+    <div class="help-title"><b>Ti serve aiuto?</b></div>
+    <div
+      class="help-body d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center gap-3"
+    >
+      <a
+        href="#"
+        class="d-flex flex-row flex-lg-column align-items-center gap-2"
+      >
+        <img
+          width="36px"
+          src="../../../assets/top-helper-iconorigin.svg"
+          alt=""
+        />
+        <span>Verifica dati di accesso a Origin</span>
+      </a>
+
+      <a
+        href="#"
+        class="d-flex flex-row flex-lg-column align-items-center gap-2"
+      >
+        <img
+          width="36px"
+          src="../../../assets/top-helper-iconlink.svg"
+          alt=""
+        />
+        <span>Collega origin al mio ID PSN</span> </a
+      ><a
+        href="#"
+        class="d-flex flex-row flex-lg-column align-items-center gap-2"
+      >
+        <img
+          width="36px"
+          src="../../../assets/top-helper-iconorigin.svg"
+          alt=""
+        />
+        <span>Come riscattare un codice</span>
+      </a>
+
+      <a
+        href="#"
+        class="d-flex flex-row flex-lg-column align-items-center gap-2"
+      >
+        <img
+          width="36px"
+          src="../../../assets/top-helper-iconalert.svg"
+          alt=""
+        />
+        <span>Non riesco a giocare online</span>
+      </a>
+    </div>
+    <div class="help-panel-footer">
+      Non hai trovato ciò che cerchi? Vai su <a href="#">Aiuto EA</a>,
+      <a href="#">Answers HQ</a> o nel <a href="#">Forum EA.</a>
+    </div>
+  </div>
+</div>

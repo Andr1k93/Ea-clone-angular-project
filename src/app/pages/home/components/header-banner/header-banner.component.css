@@ -1,0 +1,48 @@
+h3 {
+  font-size: 3.4rem;
+  max-width: 530px;
+}
+
+.itt-logo {
+  color: white;
+}
+
+.itt-logo > p {
+  font-family: eaTextRegular;
+  font-size: 18px;
+}
+
+.header-banner-container {
+  background-image: url("../../../../../assets/header-banner1920w.jpg");
+  background-size: cover;
+  height: 515px;
+}
+
+@media (max-width: 1456px) {
+  .header-banner-container {
+    background-image: url("../../../../../assets/header-banner1455.jpg");
+    height: 580px;
+  }
+}
+@media (max-width: 1024px) {
+  .header-banner-container {
+    background-image: url("../../../../../assets/header-banner1023.jpg");
+    height: 490px;
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+  .header-banner-small {
+    background-image: url("../../../../../assets/header-up-banner768.jpg");
+    background-size: cover;
+    height: 350px;
+  }
+  .header-banner-container {
+    background-image: url("../../../../../assets/header-bot-banner768.jpg");
+    height: 90vh;
+    padding-bottom: 15px;
+  }
+}

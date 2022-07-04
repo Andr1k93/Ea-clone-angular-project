@@ -1,0 +1,105 @@
+.black-nav {
+  height: 40px;
+  background-color: var(--ea-black);
+}
+
+.login-panel img:hover,
+.help-panel img:hover,
+.EA-logo:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(14%)
+    hue-rotate(1deg) brightness(105%) contrast(100%);
+}
+.top-navbar-content {
+  height: 0px;
+  background-color: #101010;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+.top-navbar-content a:hover {
+  top: 10px;
+  transform: translateY(-10px);
+  transition-duration: 0.3s;
+}
+
+.content-login-panel {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: -500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 560px;
+}
+.content-login-panel > a,
+.help-body > a {
+  width: 256px;
+}
+.help-body {
+  max-width: 560px;
+}
+
+.content-help-panel {
+  top: -500px;
+  left: 50%;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.clicked {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(14%)
+    hue-rotate(1deg) brightness(105%) contrast(100%);
+}
+
+.content-clicked {
+  top: 50%;
+  visibility: visible;
+  opacity: 100%;
+}
+
+.help-title > b {
+  font-family: oswald;
+  font-size: 18px;
+  color: white;
+}
+.help-body > a > span,
+.content-login-panel > a > span {
+  font-family: "Open Sans";
+  color: white;
+  font-size: 16px;
+}
+.help-body > a,
+.content-login-panel > a {
+  text-decoration: none;
+}
+.help-panel-footer {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+.help-panel-footer > a {
+  color: #ff1e3c;
+  text-decoration: none;
+}
+
+/***** Media Query *****/
+
+@media (max-width: 1056px) {
+  .content-login-panel > a,
+  .help-body > a {
+    width: 230px;
+  }
+}
+@media (max-width: 952px) {
+  .help-body {
+    width: 760px;
+  }
+}
+@media (max-width: 544px) {
+  .help-body {
+    width: 480px;
+  }
+  .help-panel-footer {
+    margin: 30px;
+  }
+}

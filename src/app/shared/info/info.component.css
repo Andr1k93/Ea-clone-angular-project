@@ -1,0 +1,19 @@
+.info-container {
+  height: 110px;
+}
+
+.container-red {
+  background-image: url("../../../assets/info-background-red.jpg");
+  color: white;
+}
+
+.container-blue {
+  background-image: url("../../../assets/info-background-blue.jpg");
+  color: var(--ea-black);
+}
+
+@media screen and (max-width: 992px) {
+  .info-container {
+    height: 165px;
+  }
+}

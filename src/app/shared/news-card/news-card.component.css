@@ -1,0 +1,38 @@
+/* ============ inizio card ============ */
+img {
+  width: 100%;
+  overflow: hidden;
+}
+.news-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-info h1 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.news-info h3 {
+  color: #ff4747;
+  margin: 0;
+  font-size: 0.8rem;
+}
+.news-info p {
+  margin: 5px 0 0 0;
+}
+
+.news-info span {
+  color: initial;
+  margin-left: 10px;
+}
+
+/* ============ Fine card ============ */
+/* @media screen and (max-width: 768px) {
+
+  img {
+    display: none;
+  }
+} */

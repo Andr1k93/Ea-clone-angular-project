@@ -1,0 +1,30 @@
+<!-- Ultime Novità  -->
+<div class="lastNews">
+  <h2>Ultime Novità</h2>
+  <div class="tabContainer">
+    <ul ngbNav #nav="ngbNav" class="nav-tabs nav nav-pills mb-3 ul">
+      <li ngbNavItem class="nav-item li" *ngFor="let menu of menus">
+        <a
+          ngbNavLink
+          class="nav-link button"
+          (click)="filterNews(menu.category)"
+          >{{ menu.title }}</a
+        >
+        <ng-template ngbNavContent>
+          <div class="card-container">
+            <ea-news-card
+              class="card-news"
+              [new]="new"
+              *ngFor="let new of news"
+            ></ea-news-card>
+          </div>
+        </ng-template>
+        <div class="indicator"></div>
+      </li>
+    </ul>
+    <div class="line"></div>
+    <!-- News -->
+    <div [ngbNavOutlet]="nav"></div>
+  </div>
+  <button class="btn-transparent">Più dettagli</button>
+</div>
